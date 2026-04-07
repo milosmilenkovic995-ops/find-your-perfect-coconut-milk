@@ -585,6 +585,123 @@ const recipeImages = {
   },
 };
 
+const questions: Question[] = [
+  {
+    id: 'useCase',
+    title: 'How do you most like to use coconut milk?',
+    answers: [
+      {
+        id: 'smoothies',
+        title: 'Smoothies & drinks',
+        desc: 'A quick, creamy option for blending',
+        icon: '🥤',
+      },
+      {
+        id: 'cooking',
+        title: 'Cooking & everyday recipes',
+        desc: 'A pantry option for regular kitchen use',
+        icon: '🍲',
+      },
+      {
+        id: 'desserts',
+        title: 'Desserts & richer recipes',
+        desc: 'A fuller texture for more indulgent ideas',
+        icon: '🍨',
+      },
+      {
+        id: 'allAround',
+        title: 'A bit of everything',
+        desc: 'I want the most flexible fit overall',
+        icon: '🥥',
+      },
+    ],
+  },
+  {
+    id: 'priority',
+    title: 'What matters most to you right now?',
+    answers: [
+      {
+        id: 'pantry',
+        title: 'Pantry convenience',
+        desc: 'A product that is easy to keep on hand',
+        icon: '🧺',
+      },
+      {
+        id: 'richness',
+        title: 'Extra creamy texture',
+        desc: 'A richer option for fuller recipes',
+        icon: '🥛',
+      },
+      {
+        id: 'versatility',
+        title: 'Versatility',
+        desc: 'Something that works across several uses',
+        icon: '✨',
+      },
+      {
+        id: 'routine',
+        title: 'A quick daily routine fit',
+        desc: 'An easy option for everyday use',
+        icon: '📅',
+      },
+    ],
+  },
+  {
+    id: 'format',
+    title: 'What sounds most appealing to you?',
+    answers: [
+      {
+        id: 'light-creamy',
+        title: 'A clean, creamy everyday add-in',
+        desc: 'Great for drinks, oats, and simple recipes',
+        icon: '🥥',
+      },
+      {
+        id: 'richer-base',
+        title: 'A richer recipe base',
+        desc: 'Better for sauces, desserts, and fuller texture',
+        icon: '🍮',
+      },
+      {
+        id: 'grab-go',
+        title: 'An easy pantry-style option',
+        desc: 'A convenient choice for busy days',
+        icon: '⚡',
+      },
+    ],
+  },
+  {
+    id: 'lifestyle',
+    title: 'Which option sounds most like your routine?',
+    answers: [
+      {
+        id: 'meal-prep',
+        title: 'I cook regularly',
+        desc: 'I use pantry staples in everyday meals',
+        icon: '🍽️',
+      },
+      {
+        id: 'dessert-lover',
+        title: 'I like richer recipes',
+        desc: 'I want more body and creaminess',
+        icon: '🍰',
+      },
+      {
+        id: 'busy',
+        title: 'I need quick options',
+        desc: 'Convenience matters most in my day',
+        icon: '🏃',
+      },
+      {
+        id: 'balanced',
+        title: 'I want a balanced all-rounder',
+        desc: 'I want something flexible and easy to use',
+        icon: '🙂',
+      },
+    ],
+  },
+];
+
 function Header() {
   return (
     <header className="border-b border-gray-200 bg-white">
