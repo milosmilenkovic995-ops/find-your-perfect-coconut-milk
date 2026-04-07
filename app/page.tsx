@@ -577,7 +577,7 @@ const recipeImages = {
     'baked-coconut-breakfast-cups':
       'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=1200&q=80',
     'coconut-overnight-oats':
-      'https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?auto=format&fit=crop&w=1200&q=80',
+      'https://plus.unsplash.com/premium_photo-1668615554420-d37c385d3a9d?auto=format&fit=crop&w=1200&q=80',
     'coconut-prep-bowl':
       'https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?auto=format&fit=crop&w=1200&q=80',
     'coconut-batch-breakfast-bake':
