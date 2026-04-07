@@ -585,123 +585,6 @@ const recipeImages = {
   },
 };
 
-const questions: Question[] = [
-  {
-    id: 'useCase',
-    title: 'How do you most like to use coconut milk?',
-    answers: [
-      {
-        id: 'smoothies',
-        title: 'Smoothies & drinks',
-        desc: 'A quick, creamy option for blending',
-        icon: '🥤',
-      },
-      {
-        id: 'cooking',
-        title: 'Cooking & everyday recipes',
-        desc: 'A pantry option for regular kitchen use',
-        icon: '🍲',
-      },
-      {
-        id: 'desserts',
-        title: 'Desserts & richer recipes',
-        desc: 'A fuller texture for more indulgent ideas',
-        icon: '🍨',
-      },
-      {
-        id: 'allAround',
-        title: 'A bit of everything',
-        desc: 'I want the most flexible fit overall',
-        icon: '🥥',
-      },
-    ],
-  },
-  {
-    id: 'priority',
-    title: 'What matters most to you right now?',
-    answers: [
-      {
-        id: 'pantry',
-        title: 'Pantry convenience',
-        desc: 'A product that is easy to keep on hand',
-        icon: '🧺',
-      },
-      {
-        id: 'richness',
-        title: 'Extra creamy texture',
-        desc: 'A richer option for fuller recipes',
-        icon: '🥛',
-      },
-      {
-        id: 'versatility',
-        title: 'Versatility',
-        desc: 'Something that works across several uses',
-        icon: '✨',
-      },
-      {
-        id: 'routine',
-        title: 'A quick daily routine fit',
-        desc: 'An easy option for everyday use',
-        icon: '📅',
-      },
-    ],
-  },
-  {
-    id: 'format',
-    title: 'What sounds most appealing to you?',
-    answers: [
-      {
-        id: 'light-creamy',
-        title: 'A clean, creamy everyday add-in',
-        desc: 'Great for drinks, oats, and simple recipes',
-        icon: '🥥',
-      },
-      {
-        id: 'richer-base',
-        title: 'A richer recipe base',
-        desc: 'Better for sauces, desserts, and fuller texture',
-        icon: '🍮',
-      },
-      {
-        id: 'grab-go',
-        title: 'An easy pantry-style option',
-        desc: 'A convenient choice for busy days',
-        icon: '⚡',
-      },
-    ],
-  },
-  {
-    id: 'lifestyle',
-    title: 'Which option sounds most like your routine?',
-    answers: [
-      {
-        id: 'meal-prep',
-        title: 'I cook regularly',
-        desc: 'I use pantry staples in everyday meals',
-        icon: '🍽️',
-      },
-      {
-        id: 'dessert-lover',
-        title: 'I like richer recipes',
-        desc: 'I want more body and creaminess',
-        icon: '🍰',
-      },
-      {
-        id: 'busy',
-        title: 'I need quick options',
-        desc: 'Convenience matters most in my day',
-        icon: '🏃',
-      },
-      {
-        id: 'balanced',
-        title: 'I want a balanced all-rounder',
-        desc: 'I want something flexible and easy to use',
-        icon: '🙂',
-      },
-    ],
-  },
-];
-
 function Header() {
   return (
     <header className="border-b border-gray-200 bg-white">
@@ -981,16 +864,9 @@ function EmailGate({
 }) {
   return (
     <div className="mx-auto max-w-3xl rounded-2xl border border-gray-200 bg-white p-10 text-center shadow-sm">
-      <div className="mb-4">
-        <img
-          src="/images/logo.png"
-          alt="Z Natural Foods"
-          className="mx-auto h-[48px] w-auto object-contain"
-        />
-      </div>
       <div className="mb-4 text-5xl">🥥</div>
       <h2 className="mx-auto mb-5 max-w-[700px] text-center text-[42px] font-extrabold leading-[1.15] text-slate-900">
-        <span className="font-extrabold">Your match is ready!</span>
+        <span className="font-extrabold">Your recipes are ready!</span>
         <br />
         <span className="mt-2 inline-block font-normal">Surprise&nbsp;</span>
         <span className="font-extrabold">GIFT</span>
@@ -998,8 +874,7 @@ function EmailGate({
         <span className="font-extrabold">$10 OFF</span>
       </h2>
       <p className="mx-auto mb-7 max-w-[460px] text-center text-[17px] leading-8 text-gray-500">
-        Subscribe to get your coupon code and 3 coconut recipes matched to your
-        preferences.
+        Subscribe to get your coupon code and 3 coconut milk recipe ideas matched to your routine.
       </p>
       <div className="mx-auto max-w-md space-y-3">
         <input
@@ -1045,7 +920,7 @@ function ProductCard({ product }: { product: ProductSize }) {
           className="max-h-[340px] w-auto object-contain"
         />
       </div>
-      <div className="flex flex-col items-center text-center p-7">
+      <div className="flex flex-col items-center p-7 text-center">
         <div className="mb-2 text-sm text-gray-400">{product.subtitle}</div>
         <div className="mb-3 text-[28px] font-extrabold leading-tight text-slate-900">
           {product.name}
@@ -1320,17 +1195,6 @@ export default function CoconutMilkQuizPage() {
     }
   };
 
-  const resetQuiz = () => {
-    setStep(1);
-    setFirstName('');
-    setEmail('');
-    setAnswers({});
-    setSubmitted(false);
-    setSubmitError('');
-    setSubmitSuccess('');
-    setIsSubmitting(false);
-  };
-
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
       <Header />
@@ -1340,19 +1204,11 @@ export default function CoconutMilkQuizPage() {
           <section className="mb-8 text-center">
             {step === 1 && (
               <>
-                <div className="mb-5">
-                  <img
-                    src="/images/logo.png"
-                    alt="Z Natural Foods"
-                    className="mx-auto h-[52px] w-auto object-contain"
-                  />
-                </div>
                 <h1 className="text-4xl font-extrabold leading-tight md:text-6xl">
-                  Find Your <span className="text-green-700">Ideal Coconut Milk Match</span>
+                  Find Your <span className="text-green-700">Personalized Coconut Milk Recipes</span>
                 </h1>
                 <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-gray-500 md:text-[28px] md:leading-[1.5]">
-                  Answer 4 quick questions and get a personalized coconut pick plus 3
-                  recipe ideas tailored to your routine.
+                  Answer 4 quick questions and get 3 personalized recipe ideas tailored to your routine.
                 </p>
               </>
             )}
@@ -1384,29 +1240,12 @@ export default function CoconutMilkQuizPage() {
         {step === 6 && submitted && (
           <section>
             <div className="mb-10 text-center">
-              <div className="mb-4">
-                <img
-                  src="/images/logo.png"
-                  alt="Z Natural Foods"
-                  className="mx-auto h-[52px] w-auto object-contain"
-                />
-              </div>
               <h2 className="text-4xl font-extrabold md:text-5xl">
-                Organic Coconut Milk Powder in Two Sizes
+                Your Personalized Coconut Milk Recipe Ideas
               </h2>
               <p className="mx-auto mt-4 max-w-3xl text-lg leading-8 text-gray-500">
-                We are showing two size options here, so you can choose the one that
-                fits your needs best.
+                Here are recipe ideas matched to your answers, along with both available product sizes.
               </p>
-              <div className="mt-5 flex items-center justify-center gap-3">
-                <button
-                  type="button"
-                  onClick={resetQuiz}
-                  className="rounded-xl border border-gray-300 bg-white px-4 py-3 font-semibold"
-                >
-                  Restart Preview
-                </button>
-              </div>
             </div>
 
             <div className="mx-auto mb-12 grid max-w-5xl gap-6 md:grid-cols-2">
