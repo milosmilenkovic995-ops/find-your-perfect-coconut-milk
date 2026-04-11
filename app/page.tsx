@@ -1021,7 +1021,7 @@ function EmailGate({
       {submitSuccess ? <div className="mt-3 text-[13px] text-green-700">{submitSuccess}</div> : null}
 
       <div className="mt-4 text-sm text-gray-400">
-        🔒 No spam, ever. Unsubscribe anytime.
+        🔒 By entering your email and clicking this button, you agree to receive marketing emails from Z Natural Foods. You can unsubscribe at any time.
       </div>
     </div>
   );
