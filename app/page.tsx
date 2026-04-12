@@ -734,7 +734,7 @@ function Header() {
             <a href="https://www.znaturalfoods.com/collections/all-products">Categories</a>
             <a href="https://www.znaturalfoods.com/pages/health-concerns">Health Concerns</a>
             <a
-              href="https://www.znaturalfoods.com/collections/monthly-specials"
+              href="https://www.znaturalfoods.com/specials"
               className="font-bold text-green-700"
             >
               🔥 Specials
