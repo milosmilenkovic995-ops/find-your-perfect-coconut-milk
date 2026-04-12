@@ -781,7 +781,7 @@ function Footer() {
               Wholesale, Bulk & Custom Blends
             </a>
             <a
-              href="https://https://www.znaturalfoods.com/specials"
+              href="https://www.znaturalfoods.com/specials"
               className={link}
             >
               Specials
@@ -853,7 +853,7 @@ function Footer() {
               Terms of Use
             </a>
             <a
-              href="https://https://www.znaturalfoods.com/pages/legal#tab-5"
+              href="https://www.znaturalfoods.com/pages/legal#tab-5"
               className={link}
             >
               Your Privacy Choices
