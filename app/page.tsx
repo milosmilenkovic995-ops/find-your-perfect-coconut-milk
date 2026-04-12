@@ -781,7 +781,7 @@ function Footer() {
               Wholesale, Bulk & Custom Blends
             </a>
             <a
-              href="https://www.znaturalfoods.com/collections/monthly-specials"
+              href="https://https://www.znaturalfoods.com/specials"
               className={link}
             >
               Specials
