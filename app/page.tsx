@@ -808,7 +808,7 @@ function Footer() {
             <a href="https://www.znaturalfoods.com/account" className={link}>
               Recurring Deliveries
             </a>
-            <a href="https://www.znaturalfoods.com/pages/rewards-program" className={link}>
+            <a href="https://www.znaturalfoods.com/pages/join-rewards-program" className={link}>
               Rewards Program
             </a>
           </div>
@@ -824,7 +824,7 @@ function Footer() {
             <a href="https://www.znaturalfoods.com/pages/faqs" className={link}>
               FAQs
             </a>
-            <a href="https://www.znaturalfoods.com/pages/shipping" className={link}>
+            <a href="https://www.znaturalfoods.com/pages/legal#tab-7" className={link}>
               Shipping
             </a>
             <a href="https://www.znaturalfoods.com/blogs/articles" className={link}>
@@ -837,10 +837,10 @@ function Footer() {
 
           <div>
             <div className={colTitle}>POLICIES</div>
-            <a href="https://www.znaturalfoods.com/policies/privacy-policy" className={link}>
+            <a href="https://www.znaturalfoods.com/pages/legal#tab-1" className={link}>
               Privacy Policy
             </a>
-            <a href="https://www.znaturalfoods.com/pages/california-prop65" className={link}>
+            <a href="https://www.znaturalfoods.com/pages/legal#tab-9" className={link}>
               California Prop65
             </a>
             <a
@@ -849,16 +849,16 @@ function Footer() {
             >
               Legal Notice Disclaimer
             </a>
-            <a href="https://www.znaturalfoods.com/policies/terms-of-service" className={link}>
+            <a href="https://www.znaturalfoods.com/pages/legal#tab-1" className={link}>
               Terms of Use
             </a>
             <a
-              href="https://www.znaturalfoods.com/pages/your-privacy-choices"
+              href="https://https://www.znaturalfoods.com/pages/legal#tab-5"
               className={link}
             >
               Your Privacy Choices
             </a>
-            <a href="https://www.znaturalfoods.com/pages/accessibility" className={link}>
+            <a href="https://www.znaturalfoods.com/pages/legal#tab-8" className={link}>
               Accessibility
             </a>
           </div>
